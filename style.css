@@ -141,6 +141,7 @@ font-family: "Bebas Neue", sans-serif;
     top: 29%;
     width: 25vw;
     rotate: 30deg;
+    z-index: 2;
 }
 
 .hero-right-image,
@@ -193,6 +194,11 @@ h2{
     justify-content: space-between;
 }
 
+.card .content p{
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
 span{
     font-weight: bold;
     color: var(--text-color);
@@ -202,4 +208,105 @@ span{
     color: var(--text-color);
     font-size: .95rem;
     padding: 1rem 0 2rem 0;
+}
+
+.production{
+    background: var(--text-color);
+    text-align: center;
+    color: var(--bg-color);
+    padding-block: 8rem;
+    border-radius: 1.5rem;
+    position: relative;
+}
+
+.production h2{
+    color: var(--bg-color);
+}
+
+.production p{
+    padding-bottom: 2rem;
+}
+
+
+.btn{
+    background: var(--btn-color);
+    padding: 1rem 2.5rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    border: .1rem solid var(--btn-color);
+    border-radius: 100vw;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--btn-color);
+    cursor: pointer;
+}
+
+.light-para{
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--bg-color);
+}
+
+.production-right-image{
+    position: absolute;
+    width: 28rem;
+    bottom: 0;
+    right: 2%;
+}
+
+.production-left-image{
+    position: absolute;
+    width: 30rem;
+    bottom: 0;
+    left: 0%;
+    z-index: 3;
+}
+
+.healthy-section{
+    background: var(--inner-bg-color);
+    padding-top: 5rem;
+}
+
+.milky-image{
+    z-index: 3;
+}
+
+.milky-image img{
+    display: block;
+}
+
+.healthy-section .content img{
+    width: 15rem;
+    display: block;
+    float: right;
+}
+
+.healthy-section container{
+    align-items: flex-end;
+}
+
+.commitment{
+    text-align: center;
+    background-image: url("images/leaves.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.commitment  .container img{
+    width: 29rem;
+}
+
+.commitment .container p{
+    max-width: 650px;
+    margin: auto;
+}
+
+footer{
+    background: var(--text-color);
+    text-align: center;
+    padding-block: 3rem;
+    margin-top: 3rem;
 }
